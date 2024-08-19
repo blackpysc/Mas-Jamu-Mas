@@ -1,4 +1,7 @@
-Thanks To : Hyper UI
+Thanks To :
+
+Hyper UI
+Preline
 Hero Icon
 Tailwind
 devDojo
