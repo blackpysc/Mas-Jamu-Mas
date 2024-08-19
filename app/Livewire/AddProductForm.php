@@ -31,7 +31,7 @@ class AddProductForm extends Component
     {
         $this->validate([
             'product_name' => 'required',
-            'photo' => 'required|max:5000',
+            'photo' => 'image|required|mimes:jpg,png|max:1024',
             'product_description' => 'required',
             'product_price' => 'required|numeric',
             'category_id' => 'required',
@@ -47,8 +47,6 @@ class AddProductForm extends Component
         $product->category_id = $this->category_id;
         $product->save();
 
-
-        // return $this->redirect('/products');
         return $this->redirect('/products', navigate: true);
     }
     public function render()
